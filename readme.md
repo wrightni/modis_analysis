@@ -30,4 +30,4 @@ create_rfc_model.py is executed second, and creates the random forest model base
 
 #### Summary
 
-This script will use the given model (either the random forest created with create_rfc_model or spectral unmixing). Will download MODIS data automatically if lib/modis_dl_reproject is modified to include your USGS login information. Otherwise the script can be altered to point to the correct MODIS imagery. Enter username/password on lines 405/406 of lib/modis_dl_reproj.py
+This script will use the given model (either the random forest created with create_rfc_model or spectral unmixing) to analyze a MODIS image. It will download MODIS data automatically if lib/modis_dl_reproject is modified to include your USGS login information. Otherwise the script can be altered to point to the correct MODIS imagery (each band in a seperate file, naming convention as seen in this script). Enter username/password on lines 405/406 of lib/modis_dl_reproj.py to download automatically. 
